@@ -221,6 +221,22 @@ source venv/bin/activate
 
 ---
 
+## Windows (CMD)
+
+```cmd
+venv\Scripts\activate
+```
+
+---
+
+## Windows (PowerShell)
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+---
+
 ## 5. Instalar dependências
 
 ```bash

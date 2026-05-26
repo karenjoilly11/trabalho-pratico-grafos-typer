@@ -1,15 +1,12 @@
-# Importa a biblioteca PyGithub para acessar a API do GitHub
+import os
+from dotenv import load_dotenv
 from github import Github
-
-# Importa biblioteca para gerar arquivos CSV
 import csv
 
-
-# Token de autenticação da API do GitHub
-TOKEN = "TOKEN_DE_AUTENTICACAO_AQUI"
+load_dotenv()
 
 
-# Cria conexão com a API do GitHub
+TOKEN = os.getenv("GITHUB_TOKEN")
 g = Github(TOKEN)
 
 

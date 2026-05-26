@@ -1,8 +1,8 @@
 # Implementação de grafo utilizando matriz de adjacência.
 # A matriz indica se existe aresta entre dois vértices.
 
-from src.AbstractGraph import AbstractGraph
-from src.exceptions import LoopNotAllowedException
+from codigo.etapa02.src.AbstractGraph import AbstractGraph
+from codigo.etapa02.src.exceptions import LoopNotAllowedException
 
 class AdjacencyMatrixGraph(AbstractGraph):
 
@@ -102,7 +102,7 @@ class AdjacencyMatrixGraph(AbstractGraph):
 
         with open(path, "w") as file:
 
-            file.write("source,target\n")
+            file.write("Source,Target\n")
 
             # Exporta arestas
             for u in range(self.num_vertices):

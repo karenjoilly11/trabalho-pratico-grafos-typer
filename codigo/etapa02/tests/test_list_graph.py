@@ -1,5 +1,5 @@
 # Importa implementação do grafo por lista de adjacência
-from src.AdjacencyListGraph import AdjacencyListGraph
+from codigo.etapa02.src.AdjacencyListGraph import AdjacencyListGraph
 
 
 # Cria grafo com 5 vértices

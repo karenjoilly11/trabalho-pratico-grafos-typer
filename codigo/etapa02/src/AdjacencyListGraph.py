@@ -1,9 +1,9 @@
 # Implementação de grafo utilizando lista de adjacência.
 # Cada vértice armazena seus vértices vizinhos.
 
-from src.AbstractGraph import AbstractGraph
+from codigo.etapa02.src.AbstractGraph import AbstractGraph
 
-from src.exceptions import LoopNotAllowedException
+from codigo.etapa02.src.exceptions import LoopNotAllowedException
 
 class AdjacencyListGraph(AbstractGraph):
 
@@ -83,7 +83,7 @@ class AdjacencyListGraph(AbstractGraph):
 
         with open(path, "w") as file:
 
-            file.write("source,target\n")
+            file.write("Source,Target\n")
 
             for u in self.graph:
 

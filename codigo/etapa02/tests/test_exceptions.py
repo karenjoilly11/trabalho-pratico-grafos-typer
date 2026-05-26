@@ -1,8 +1,8 @@
 # Importa implementação do grafo
-from src.AdjacencyListGraph import AdjacencyListGraph
+from codigo.etapa02.src.AdjacencyListGraph import AdjacencyListGraph
 
 # Importa exceção personalizada
-from src.exceptions import LoopNotAllowedException
+from codigo.etapa02.src.exceptions import LoopNotAllowedException
 
 
 # Cria grafo com 3 vértices

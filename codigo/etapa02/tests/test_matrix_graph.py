@@ -1,5 +1,5 @@
 # Importa implementação do grafo por matriz de adjacência
-from src.AdjacencyMatrixGraph import AdjacencyMatrixGraph
+from codigo.etapa02.src.AdjacencyMatrixGraph import AdjacencyMatrixGraph
 
 
 # Cria grafo com 5 vértices

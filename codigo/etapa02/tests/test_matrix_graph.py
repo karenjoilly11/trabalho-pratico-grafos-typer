@@ -30,7 +30,7 @@ print(graph.is_connected())
 
 # Exporta grafo para visualização no Gephi
 graph.export_to_gephi(
-    "codigo/etapa02/grafo_matriz.csv"
+    "grafo_matriz.csv"
 )
 
 print("Exportação concluída!")

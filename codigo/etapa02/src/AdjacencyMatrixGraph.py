@@ -1,8 +1,8 @@
 # Implementação de grafo utilizando matriz de adjacência.
 # A matriz indica se existe aresta entre dois vértices.
 
-from AbstractGraph import AbstractGraph
-
+from src.AbstractGraph import AbstractGraph
+from src.exceptions import LoopNotAllowedException
 
 class AdjacencyMatrixGraph(AbstractGraph):
 
@@ -26,7 +26,7 @@ class AdjacencyMatrixGraph(AbstractGraph):
 
         # Não permite loops
         if u == v:
-            raise ValueError(
+            raise LoopNotAllowedException(
                 "Grafos simples não permitem loops"
             )
 

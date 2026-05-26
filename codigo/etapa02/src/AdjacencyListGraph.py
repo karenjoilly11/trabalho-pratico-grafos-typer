@@ -1,8 +1,9 @@
 # Implementação de grafo utilizando lista de adjacência.
 # Cada vértice armazena seus vértices vizinhos.
 
-from AbstractGraph import AbstractGraph
+from src.AbstractGraph import AbstractGraph
 
+from src.exceptions import LoopNotAllowedException
 
 class AdjacencyListGraph(AbstractGraph):
 
@@ -26,9 +27,9 @@ class AdjacencyListGraph(AbstractGraph):
 
         # Não permite loops
         if u == v:
-            raise ValueError(
+            raise LoopNotAllowedException(
                 "Grafos simples não permitem loops"
-            )
+        )
 
         # Set evita arestas paralelas automaticamente
         self.graph[u].add(v)
